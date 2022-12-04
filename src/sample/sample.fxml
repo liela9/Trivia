@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" accessibleRole="IMAGE_VIEW" alignment="CENTER" prefHeight="600.0" prefWidth="650.0" style="-fx-border-image-opacity: 0.5;" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TriviaController">
+   <children>
+      <Label fx:id="scoreLabel" alignment="CENTER" prefHeight="70.0" prefWidth="200.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="174.0" maxWidth="452.0" minHeight="100.0" minWidth="390.0" prefHeight="103.0" prefWidth="452.0" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="welcomeLabel" textFill="#d00db3">
+         <font>
+            <Font name="Calibri Bold" size="27.0" />
+         </font></Label>
+      <VBox alignment="CENTER_LEFT" maxHeight="181.0" maxWidth="300.0" minHeight="100.0" minWidth="300.0" prefHeight="181.0" prefWidth="300.0">
+         <children>
+            <RadioButton fx:id="radioBtn1" alignment="CENTER_LEFT" mnemonicParsing="false" textFill="WHITE" visible="false">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radioBtn2" alignment="CENTER_LEFT" mnemonicParsing="false" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="radioBtn3" alignment="CENTER_LEFT" mnemonicParsing="false" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="radioBtn4" alignment="CENTER_LEFT" mnemonicParsing="false" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submitPressed" text="Submit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="startNewGameBtn" mnemonicParsing="false" onAction="#startPressed" text="Start New Game">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="endGameBtn" mnemonicParsing="false" onAction="#endPressed" text="End Game" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
